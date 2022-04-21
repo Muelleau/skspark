@@ -1,4 +1,4 @@
-package io.vigg.skgraph
+package io.vigg.skspark
 
 import io.vigg.skspark.Runner
 import org.junit.Test
