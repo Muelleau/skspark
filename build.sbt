@@ -2,6 +2,14 @@ ThisBuild / version := "0.1.0-SNAPSHOT"
 
 ThisBuild / scalaVersion := "2.13.8"
 
+organization := "io.vigg"
+publishMavenStyle := true
+githubOwner := "Muelleau"
+githubRepository := "skloom"
+githubTokenSource := TokenSource.GitConfig("github.token")
+
+resolvers += Resolver.githubPackages("OWNER")
+
 lazy val skspark = (project in file("."))
   .settings(
     name := "skspark",
